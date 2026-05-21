@@ -1,4 +1,6 @@
 package business;
+
+//Helena da Silva Ramos e Lucas Conceição Ricardo
 public class DescontoVIP implements IDesconto{
 
     @Override

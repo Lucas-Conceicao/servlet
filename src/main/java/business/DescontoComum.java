@@ -1,5 +1,6 @@
 package business;
 
+//Helena da Silva Ramos e Lucas Conceição Ricardo
 public class DescontoComum implements IDesconto{
 
     @Override

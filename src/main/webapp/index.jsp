@@ -5,9 +5,9 @@
     </head>
 
     <body>
-        <h2>Sistema Web de Desconto Inteligente</h2>
+        <h2>Sistema Web de Desconto Inteligente - FORMULARIO</h2>
         <h3>Helena da Silva Ramos e Lucas Conceicao Ricardo</h3>
-        <form>
+        <form method="GET">
             <label>Valor:</label>
             <input type='number' name='nValor' required><br><br>
 

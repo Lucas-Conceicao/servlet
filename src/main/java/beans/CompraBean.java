@@ -2,7 +2,9 @@ package beans;
 
 import business.DescontoComum;
 import business.DescontoPremium;
+import business.DescontoVIP;
 
+//Helena da Silva Ramos e Lucas Conceição Ricardo
 public class CompraBean{
     private double valorOriginal;
     private String tipoCliente;
@@ -28,9 +30,18 @@ public class CompraBean{
 
     public void setDescontoAplicado_E_ValorFinal() {
         switch (tipoCliente) {
-            case "COMUM": this.descontoAplicado = 5; this.valorFinal = new DescontoComum(valorOriginal); break;
-            case "PREMIUM": this.descontoAplicado = 10; break;
-            case "VIP": this.descontoAplicado = 20; break;
+            case "COMUM":
+                this.descontoAplicado = 5;
+                valorFinal = new DescontoComum().calcular(valorOriginal);
+                break;
+            case "PREMIUM":
+                this.descontoAplicado = 10;
+                valorFinal = new DescontoPremium().calcular(valorOriginal);
+                break;
+            case "VIP":
+                this.descontoAplicado = 20;
+                valorFinal = new DescontoVIP().calcular(valorOriginal);
+                break;
         }
     }
 
