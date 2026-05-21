@@ -7,7 +7,7 @@
     <body>
         <h2>Sistema Web de Desconto Inteligente - FORMULARIO</h2>
         <h3>Helena da Silva Ramos e Lucas Conceicao Ricardo</h3>
-        <form method="GET">
+        <form action="ServletDesconto" method="POST">
             <label>Valor:</label>
             <input type='number' name='nValor' required><br><br>
 
